@@ -1,0 +1,454 @@
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Lato;
+    }
+
+    header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icones{
+        width: 90%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .offer{
+        width: 100%;
+    }
+
+    /* ===================inicio da main section 1========================= */
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-bottom: #A5A1A1 2px solid;
+        flex-wrap: wrap;
+    }
+
+    .promocao{
+
+        width: 100%;
+        display: flex;
+        height: 10vh;
+        flex-direction: column;
+        align-items: center;
+        border-bottom: #A5A1A1 2px solid;
+    }
+
+    .promocao-caixa{
+    
+        width: 90%;
+        height: 10vh;
+        /* padding-left: 5px; */
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+    /* ==============================main INICIO SECTION 2============================ */
+    .produtos{
+        width: 90%;
+         height: 280vh; 
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: space-between; 
+    }
+
+    .produtos-caixa{
+        width: 32%;
+        height: 80vh; 
+        padding: 3px;
+        filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.10)); 
+        display: flex;
+        flex-direction: column;
+        background:#fff;
+    }
+
+    .produtos-caixa figure{
+        width: 100%;
+        background-color: #5CA720;
+        display: block;
+    }
+
+
+    .produtos-caixa figure img{
+        display: block;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .produtos-caixa figure img:hover{
+        opacity: 0.5;
+    }
+
+
+    .produtos-caixa h3{
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        color: #161616;
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .produtos-caixa p{
+        height: 7vh; 
+        color: #161616;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 600;
+    }
+
+    .produtos-caixa span{
+        color: #5CA720;
+        font-size: 23px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+
+
+    .produtos-caixa button{
+        width: 40%;
+        height: 7vh;
+        border-radius: 15px;
+        background: #5CA720;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+        border: none;
+        color: #FFF5F5;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 900;
+       
+    }
+
+    .produtos-caixa button:hover{
+        background:rgba(81, 34, 0, 0.74) ;
+    }
+
+    /* =====================================inicio da footer section 1========================= */
+    .cadastro{
+        width: 100%;
+        height: 30vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom: #A5A1A1 2px solid;
+    }
+
+    .servicos{
+        width: 45%;
+        height: 20vh;
+    
+    }
+
+    .servicos ul li{
+        height: 5vh;
+        color: #161616;
+        font-size: 15px;
+        font-weight: 600;
+        list-style: none;
+    }
+
+    .servicos li a{
+        text-decoration: none;
+        color: #161616;
+    }
+
+   
+    .Newslrette{
+        width: 35%;
+        height: 15vh;
+    }
+
+    .Newslrette h4{
+        height: 6vh;
+        color: #161616;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    input[type="email"] {
+        width: 70%;
+        height: 7vh;
+        border-radius: 5px 0px 0px 5px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    input[type="submit"] {
+        height: 7vh;
+        width: 30%;
+        background: #5CA720;
+        color: #FFF;
+        border: none;
+        border-radius: 0px 5px 5px 0px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    }
+
+    input[placeholder]{
+        padding: 12px;
+    }
+
+ /* =====================================inicio da footer section 2========================= */
+    .pagamento{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .redes{
+        width: 23%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .cartao{
+        width: 33%;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .redes a img{
+        width: 80%;
+    }
+    .cartao a img{
+        width: 80%;
+    }
+
+                                          /* ====================================responsividade======================================================== */
+
+
+    @media (max-width: 768px){
+
+        
+     .produtos{
+        height: 650vh;
+     }
+        .produtos-caixa{
+            width: 100%;
+            height: 65vh;
+            padding: 10px; 
+        }
+
+         .produtos-caixa h3{
+            height: 10vh;
+        }
+
+        .produtos-caixa p{ 
+            height: 10vh; 
+            font-size: 18px;
+        }
+
+        .produtos-caixa span{
+            font-size: 23px;
+        }
+
+        .produtos-caixa button{
+            width: 45%;
+            height: 10vh;
+            margin-bottom: 10px;
+            }
+    
+            .produtos-caixa figure img{
+                height: 40vh;
+            }
+        
+
+             /* =====================================inicio da footer section 1========================= */
+  .cadastro{
+    height: 62vh;
+    flex-direction: column;
+  }
+
+  .servicos{
+    width: 90%;
+    }
+
+    .servicos ul li{
+        font-size: 18px;
+ 
+    }
+
+    .Newslrette{
+        width: 90%;
+        height: 28vh;
+    }
+
+    .Newslrette h4{
+        height: 5vh;
+        color: #161616;
+        font-size: 20px;
+ 
+    }
+
+    form{
+        /* border: solid; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 22vh;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        height: 8vh;
+        border-radius:1px ;
+        font-size: 20px;
+    }
+    input[type="submit"] {
+        width: 100%;
+        border-radius:1px;
+        font-size: 23px;
+    }
+
+    input[type=""] {
+        width: 100%;
+        border-radius:1px;
+    }
+
+ /* =====================================inicio da footer section 2========================= */
+    .pagamento{
+  
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+.redes{
+
+          width: 30%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+      }
+
+      .cartao{
+          width: 45%;
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+      }
+
+      .redes a img{
+        width: 68%;
+    }
+    .cartao a img{
+        width: 70%;
+    }
+
+}
+
+@media(min-width:501px) and (max-width: 900px){
+
+
+    /* ========================main=================== */
+.produtos{
+    border: solid;
+  height:350vh ;
+}
+
+.produtos-caixa{
+    width: 48%;
+    height: 60vh;
+    padding: 15px; 
+}
+
+.produtos-caixa h3{
+    height: 8vh;
+    font-size: 28px;
+}
+
+.produtos-caixa p{ 
+    height: 6vh; 
+    font-size: 25px;
+}
+
+.produtos-caixa span{
+    font-size: 32px;
+}
+
+.produtos-caixa button{
+    width: 48%;
+    height: 6vh;
+    font-size: 25px;
+    }
+    
+.produtos-caixa figure img{
+    height: 35vh;
+}
+
+
+/* =====================inicio footer section 1=========== */
+.cadastro{
+    height: 62vh;
+    flex-direction: column;
+  }
+
+  .servicos{
+      border: solid;  
+    width: 90%;
+    }
+
+    .servicos ul li{
+        font-size: 25px;
+    }
+
+    .Newslrette{
+        width: 90%;
+        height: 28vh;
+    }
+
+    .Newslrette h4{
+        height: 5vh;
+        color: #161616;
+        font-size: 28px;
+ 
+    }
+
+    form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 22vh;
+    }
+
+    input[type="email"] {
+        width: 100%;
+        height: 8vh;
+        border-radius:1px ;
+        font-size: 25px;
+    }
+
+    input[type="submit"] {
+        width: 100%;
+        border-radius:2px;
+        font-size: 30px;
+    }
+
+     /* =====================================inicio da footer section 2========================= */
+    .pagamento{
+        width: 100%;
+        height: 20vh;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+}
